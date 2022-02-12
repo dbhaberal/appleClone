@@ -8,13 +8,15 @@
 header {
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
-
+    justify-content: center;
 }
 
 
 nav {
-    width: 100%;
+    width: 80%;
 }
+
+
 
 nav ul {
     display: flex;
@@ -25,7 +27,12 @@ nav ul {
     flex-direction: row;
 }
 
-@media screen and (max-width: 475px) {
+nav a {
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 769px) {
     nav ul {
     display: flex;
     flex-direction: row;
@@ -46,6 +53,14 @@ nav ul {
     flex-direction: row;
     }
 }
+
+@media screen and (min-width: 769px) {
+    nav .show-small {
+        display: none;
+    }
+}
+
+
 
 .shop-online {
     background-color: #fbfbfd;

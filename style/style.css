@@ -11,17 +11,40 @@ header {
 
 }
 
+
 nav {
     width: 100%;
 }
 
 nav ul {
-    height: 100%;
     display: flex;
     list-style: none;
     color: rgb(233, 233, 233);
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 475px) {
+    nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    nav li {
+    display: none;
+    }
+
+    nav .show-small {
+    display: block;
+    display: flex;
+    list-style: none;
+    color: rgb(233, 233, 233);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    }
 }
 
 .shop-online {
